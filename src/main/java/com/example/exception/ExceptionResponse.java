@@ -1,14 +1,16 @@
-package com.example.demo;
+package com.example.exception;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-//get set construct tostring
+import java.util.Date;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class HelloWorldBeen {
+public class ExceptionResponse {
+    private Date timestamp;
     private String message;
+    private String details;
 }
